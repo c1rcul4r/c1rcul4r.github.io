@@ -32,8 +32,8 @@ img {
 }
 
 .conceptd p {
-  font-size: 1.117rem;
-  font-size: calc(0.38vw + 0.908rem);
+  font-size: 1rem;
+  font-size: calc(0.38vw + 0.7rem);
   margin-bottom: 1rem;
     margin-top: 1rem;
     text-align: center;
@@ -68,8 +68,8 @@ img {
 }
 
 .conceptd p {
-  font-size: 14px;
-  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
     margin-top: 1rem;
     text-align: center;
     line-height: 1.5;
