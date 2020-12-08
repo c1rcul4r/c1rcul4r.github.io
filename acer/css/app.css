@@ -40,6 +40,11 @@ img {
     line-height: 1.5;
 }
 
+.conceptd .cta {
+  font-size: 14px !important;
+  margin-bottom: 0 !important;
+}
+
 .conceptd .col-full p {
   font-size: 1.117rem;
   font-size: calc(0.38vw + 0.908rem);
