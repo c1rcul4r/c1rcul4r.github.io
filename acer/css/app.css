@@ -32,8 +32,8 @@ img {
 }
 
 .conceptd p {
-  font-size: 1.117rem;
-  font-size: calc(0.38vw + 0.908rem);
+  font-size: 1.2rem;
+  font-size: calc(0.8vw + 0.908rem);
   margin-bottom: 1rem;
     margin-top: 1rem;
     text-align: center;
@@ -41,13 +41,13 @@ img {
 }
 
 .conceptd .cta {
-  font-size: 14px !important;
+  font-size: 13px !important;
   margin-bottom: 0 !important;
 }
 
 .conceptd .col-full p {
-  font-size: 1.117rem;
-  font-size: calc(0.38vw + 0.908rem);
+  font-size: 1.2rem;
+  font-size: calc(0.8vw + 0.908rem);
   margin-bottom: 1rem;
     margin-top: 1rem;
     text-align: center;
@@ -70,6 +70,11 @@ img {
 
 .conceptd .text-primary-orange {
   color: rgb(220, 88, 42);
+}
+
+.conceptd .cta {
+  font-size: 14px !important;
+  margin-bottom: 0 !important;
 }
 
 .conceptd p {
