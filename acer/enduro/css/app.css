@@ -28,7 +28,7 @@ img {
 }
 
 .conceptd .text-primary-orange {
-  color: rgb(220, 88, 42);
+  color: rgb(0, 0, 0);
 }
 
 .conceptd p {
@@ -69,7 +69,7 @@ img {
 }
 
 .conceptd .text-primary-orange {
-  color: rgb(220, 88, 42);
+  color: rgb(0, 0, 0);
 }
 
 .conceptd .cta {
@@ -389,13 +389,13 @@ padding: 48px;
 }
 
 .conceptd .button.emptyOrange {
-  border: 2px solid rgb(220, 88, 42);
+  border: 2px solid rgb(0, 0, 0);
 background: transparent;
-color: rgb(220, 88, 42);
+color: rgb(0, 0, 0);
 }
 
 .conceptd .button.emptyOrange:hover {
-background: rgb(220, 88, 42);
+background: rgb(0, 0, 0);
 color: #ffffff;
 }
 
@@ -431,11 +431,11 @@ color: #ffffff;
 .conceptd .button.emptyOrange {
   border: 2px solid rgb(220, 88, 42);
 background: transparent;
-color: rgb(220, 88, 42);
+color: rgb(0, 0, 0);
 }
 
 .conceptd .button.emptyOrange:hover {
-background: rgb(220, 88, 42);
+background: rgb(0, 0, 0);
 color: #ffffff;
 }
 
