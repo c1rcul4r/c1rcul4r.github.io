@@ -429,7 +429,7 @@ color: #ffffff;
 }
 
 .conceptd .button.emptyOrange {
-  border: 2px solid rgb(220, 88, 42);
+  border: 2px solid rgb(0, 0, 0);
 background: transparent;
 color: rgb(0, 0, 0);
 }
