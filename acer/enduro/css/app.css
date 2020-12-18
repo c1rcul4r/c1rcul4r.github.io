@@ -185,6 +185,11 @@ padding: 24px;
   padding-top: 100%;
 }
 
+.conceptd .buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width:768px) {
 
 .conceptd {
@@ -319,6 +324,11 @@ padding: 48px;
   justify-content: center;
   width: 50%;
   padding: 0;
+}
+
+.conceptd .buttons-container {
+  display: flex;
+  flex-direction: column;
 }
 
 }
