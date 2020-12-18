@@ -328,7 +328,7 @@ padding: 48px;
 
 .conceptd .buttons-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 }
