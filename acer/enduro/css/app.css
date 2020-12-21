@@ -149,13 +149,32 @@ padding: 24px;
 .conceptd .col-full.text{
   width: calc(100% - 48px);
   margin: 0 auto;
-  padding: 48px 24px 0;
+  padding: 24px 24px 0;
 }
 
 .conceptd .col-full.image{
   width: 100%;
   margin: 0 auto;
   padding: 24px 0 48px;
+}
+
+.conceptd .col-full.logo {
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 0 0;
+}
+
+.conceptd .col-full.logo .media {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.conceptd .col-full.logo .media img {
+  width: auto;
+  height: 25px;
+  margin: 0 auto;
+  padding: 24px 0 0;
 }
 
 .conceptd .col-1-2.text {
@@ -239,6 +258,25 @@ padding: 24px;
   padding: 24px 0 48px;
 }
 
+.conceptd .col-full.logo {
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 0 0;
+}
+
+.conceptd .col-full.logo .media {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.conceptd .col-full.logo .media img {
+  width: auto;
+  height: 35px;
+  margin: 0 auto;
+  padding: 24px 0 0;
+}
+
 .conceptd .col-1-2.text {
   display: flex;
   flex-direction: column;
@@ -298,6 +336,25 @@ padding: 48px;
   width: 100%;
   margin: 0 auto;
   padding: 24px 0 48px;
+}
+
+.conceptd .col-full.logo {
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 0 0;
+}
+
+.conceptd .col-full.logo .media {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.conceptd .col-full.logo .media img {
+  width: auto;
+  height: 50px;
+  margin: 0 auto;
+  padding: 24px 0 0;
 }
 
 .conceptd .col-full h2,
