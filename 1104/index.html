@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HR Survey</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #EFECE5 !important;
+        margin: 0;
+      }
+
+      hr {
+        opacity: 50%;
+      }
+
+      header {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      header .header-container {
+        padding: 0 15px;
+      }
+
+      header img {
+        max-width: 120px;
+      }
+
+      .container {
+        margin-top: 45px !important;
+      }
+
+      .headline {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15vw 0;
+      }
+
+      .headline img {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      p {
+        font-family: YoonVGothicStd,SimplonMono,sans-serif;
+        font-weight: 400;
+        font-size: calc(18px + (24 - 18) * ((100vw - 360px) / (1440 - 360))) !important;;
+      }
+
+      .chapter-container {
+        margin: 0 15px !important;
+        margin-bottom: 10vw !important;
+      }
+
+      .chapter-title {
+        margin-top: 15vw !important;
+        margin-bottom: 7.5vw !important;
+      }
+
+      .episodes-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+      }
+
+      .episodes-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .episodes-container video {
+        width: 100%;
+      }
+
+      .episodes-container p {
+        font-size: 14px !important;
+      }
+
+      @media only screen and (min-width:769px) {
+        header img {
+          max-width: 180px;
+        }
+
+        .headline {
+          padding: 5vw 0 7.5vw;
+        }
+
+        .headline img {
+          max-width: 580px;
+          margin: 0 auto;
+        }
+
+        header .header-container {
+          max-width: 1440px !important;
+          width: 100%;
+          margin: 0 auto !important;
+        }
+
+        .chapter-container {
+          max-width: 1440px !important;
+          margin: 0 auto !important;
+          margin-bottom: 4vw !important;
+        }
+
+        .chapter-title {
+          margin-top: 4vw !important;
+          margin-bottom: 2vw !important;
+        }
+
+        .episodes-row {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-column-gap: 20px;
+          grid-row-gap: 20px;
+        }
+      }
+    </style>
+    <header>
+      <div class="header-container">
+        <img src="img/logo-header.png" alt="">
+      </div>
+    </header>
+    <div class="container">
+      <div class="headline">
+        <img src="img/logo.png" alt="">
+      </div>
+      <div class="chapter-container">
+        <p class="chapter-title">CHAPTER 01<br><strong>THE INCLUSION JOURNEY, AN INTRODUCTION</strong></p>
+        <div class="episodes-row">
+          <div class="episodes-container">
+            <video src="img/E00.mp4" autoplay poster="">
+            </video>
+            <p>Episode 00</p>
+          </div>
+          <div class="episodes-container">
+            <video src="img/E00.mp4" autoplay poster="">
+            </video>
+            <p>Episode 01</p>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-container">
+        <hr>
+        <p class="chapter-title">CHAPTER 02<br><strong>(Y)OUR STORY IS OUR STORY</strong></p>
+        <div class="episodes-row">
+          <div class="episodes-container">
+            <video src="img/E00.mp4" autoplay poster="">
+            </video>
+            <p>Episode 02</p>
+          </div>
+          <div class="episodes-container">
+            <video src="img/E00.mp4" autoplay poster="">
+            </video>
+            <p>Episode 03</p>
+          </div>
+          <div class="episodes-container">
+            <video src="img/E00.mp4" autoplay poster="">
+            </video>
+            <p>Episode 04</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
