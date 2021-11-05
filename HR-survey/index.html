@@ -44,6 +44,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         padding: 15vw 0;
       }
 
@@ -52,10 +53,15 @@
         margin: 0 auto;
       }
 
+      .headline .headline-img {
+        max-width: 150px;
+        padding: 7.5vw 0;
+      }
+
       p {
         font-family: YoonVGothicStd,SimplonMono,sans-serif;
         font-weight: 400;
-        font-size: calc(18px + (24 - 18) * ((100vw - 360px) / (1440 - 360))) !important;;
+        font-size: calc(18px + (20 - 18) * ((100vw - 360px) / (1440 - 360))) !important;;
       }
 
       .chapter-container {
@@ -85,8 +91,22 @@
         width: 100%;
       }
 
+      .headline p,
       .episodes-container p {
         font-size: 14px !important;
+        line-height: 19.6px !important;
+      }
+
+      .headline p {
+        text-align: left;
+        width: calc(100% - 30px);
+        padding: 0 15px;
+      }
+
+      @media only screen and (max-width:1440px) {
+        .chapter-container {
+          margin: 0 15px !important;
+        }
       }
 
       @media only screen and (min-width:769px) {
@@ -101,6 +121,11 @@
         .headline img {
           max-width: 580px;
           margin: 0 auto;
+        }
+
+        .headline .headline-img {
+          padding: 2.5vw 0;
+          max-width: 250px;
         }
 
         header .header-container {
@@ -126,6 +151,11 @@
           grid-column-gap: 20px;
           grid-row-gap: 20px;
         }
+
+        .headline p {
+          text-align: center;
+          width: 75%;
+        }
       }
     </style>
     <header>
@@ -136,17 +166,22 @@
     <div class="container">
       <div class="headline">
         <img src="img/logo.png" alt="">
+        <img class="headline-img" src="img/header-img.jpg" alt="">
+        <p>Ciao Family, the Inclusion Survey 2021 is on its way. For this reason we decided to help you out with a friendly recap of all the initiatives that have been carried out this year to make life and work at Golden easier and better.
+        </br></br>In the following weeks we’ll be releasing some video episodes which sum up our bigger achievements in terms of people and inclusivity. We really hope you will enjoy them. The first two Chapters are available through the links below.
+      </br></br>You can follow the daily drop on our <a href="https://www.instagram.com/goldengoosefamily/" style="color: black !important; font-weight: 600 !important;">Golden Family Instagram</a> account too.
+    </br></br><strong style="text-transform: uppercase;">Small actions make big changes. Watch the videos and discover more >>></strong></p>
       </div>
       <div class="chapter-container">
-        <p class="chapter-title">CHAPTER 01<br><strong>THE INCLUSION JOURNEY, AN INTRODUCTION</strong></p>
-        <div class="episodes-row">
+        <p class="chapter-title" style="width: 90%;">CHAPTER 01<br><strong>THE INCLUSION JOURNEY, AN INTRODUCTION</strong></p>
+        <div class="episodes-row content">
           <div class="episodes-container">
-            <video src="img/E00.mp4" controls poster="">
+            <video src="img/E00.mp4" controls poster="img/cover/E00.jpg">
             </video>
             <p>Episode 00</p>
           </div>
           <div class="episodes-container">
-            <video src="img/E00.mp4" controls poster="">
+            <video src="img/E00.mp4" controls poster="img/cover/E01.jpg">
             </video>
             <p>Episode 01</p>
           </div>
@@ -157,19 +192,103 @@
         <p class="chapter-title">CHAPTER 02<br><strong>(Y)OUR STORY IS OUR STORY</strong></p>
         <div class="episodes-row">
           <div class="episodes-container">
-            <video src="img/E00.mp4" controls poster="">
+            <video src="img/E00.mp4" controls poster="img/cover/E02.jpg">
             </video>
             <p>Episode 02</p>
           </div>
           <div class="episodes-container">
-            <video src="img/E00.mp4" controls poster="">
+            <video src="img/E00.mp4" controls poster="img/cover/E03.jpg">
             </video>
             <p>Episode 03</p>
           </div>
           <div class="episodes-container">
-            <video src="img/E00.mp4" controls poster="">
+            <video src="img/E00.mp4" controls poster="img/cover/E04.jpg">
             </video>
             <p>Episode 04</p>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-container">
+        <hr>
+        <p class="chapter-title">CHAPTER 03<br><strong>GROWING @ GOLDEN</strong></p>
+        <div class="episodes-row">
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 05</p>
+          </div>
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 06</p>
+          </div>
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 07</p>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-container">
+        <hr>
+        <p class="chapter-title">CHAPTER 04<br><strong>MANAGERIAL TRAINING</strong></p>
+        <div class="episodes-row">
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 08</p>
+          </div>
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 09</p>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-container">
+        <hr>
+        <p class="chapter-title">CHAPTER 05<br><strong>GOLDEN SHIFT</strong></p>
+        <div class="episodes-row">
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 10</p>
+          </div>
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 11</p>
+          </div>
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 12</p>
+          </div>
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 13</p>
+          </div>
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 14</p>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-container">
+        <hr>
+        <p class="chapter-title">CHAPTER 06<br><strong>THE END</strong></p>
+        <div class="episodes-row">
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 15</p>
+          </div>
+          <div class="episodes-container">
+            <video src="" controls poster="img/cover/CS.jpg">
+            </video>
+            <p>Episode 16</p>
           </div>
         </div>
       </div>
