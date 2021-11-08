@@ -54,8 +54,8 @@
       }
 
       .headline .headline-img {
-        max-width: 150px;
-        padding: 7.5vw 0;
+        max-width: 200px;
+        padding: 0 0 10vw;
       }
 
       p {
@@ -100,7 +100,15 @@
       .headline p {
         text-align: left;
         width: calc(100% - 30px);
-        padding: 0 15px;
+        padding: 5vw 15px 0;
+      }
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
       }
 
       @media only screen and (max-width:1440px) {
@@ -110,12 +118,21 @@
       }
 
       @media only screen and (min-width:769px) {
+        .desktop {
+          display: block;
+        }
+
+        .mobile {
+          display: none;
+        }
+
         header img {
           max-width: 180px;
         }
 
         .headline {
           padding: 5vw 0 7.5vw;
+          height: calc(50vw - 12.5vw);
         }
 
         .headline img {
@@ -124,8 +141,11 @@
         }
 
         .headline .headline-img {
-          padding: 2.5vw 0;
-          max-width: 250px;
+          padding: 0;
+          max-width: 100vw;
+          height: 50vw;
+          position: absolute;
+          top: 0;
         }
 
         header .header-container {
@@ -154,7 +174,8 @@
 
         .headline p {
           text-align: center;
-          width: 75%;
+          width: 50%;
+          padding: 2.5vw 15px 0;
         }
       }
     </style>
@@ -165,8 +186,9 @@
     </header>
     <div class="container">
       <div class="headline">
+        <img class="headline-img mobile" src="img/header-img-mobile.png" alt="">
         <img src="img/logo.png" alt="">
-        <img class="headline-img" src="img/header-img.png" alt="">
+        <img class="headline-img desktop" src="img/header-img-desktop.png" alt="">
         <p>Ciao Family, the Inclusion Survey 2021 is on its way. For this reason we decided to help you out with a friendly recap of all the initiatives that have been carried out this year to make life and work at Golden easier and better.
         </br></br>In the following weeks we’ll be releasing some video episodes which sum up our bigger achievements in terms of people and inclusivity. We really hope you will enjoy them. The first two Chapters are available through the links below.
       </br></br>You can follow the daily drop on our <a href="https://www.instagram.com/goldengoosefamily/" style="color: black !important; font-weight: 600 !important;">Golden Family Instagram</a> account too.
