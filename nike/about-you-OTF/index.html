@@ -23,11 +23,29 @@
       outline:0;
       padding:0;
       display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
+      background-color: white !important;
+    }
+
+    a {
+      padding: 0;
+      display: flex;
+      margin: 0 auto !important;
+    }
+
+    .col6 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .col6 video {
+      width: 50% !important;
     }
 
     img, video {
-      width: 100%;
+      width: 100.25%;
     }
 
     .container {
@@ -48,6 +66,9 @@ border-radius: 25px;
       <img src="img/image-01.jpg" alt="">
     </div>
     <div>
+      <video src="img/video-01.mp4" playsinline autoplay muted loop></video>
+    </div>
+    <div>
     <img src="img/image-02.jpg" alt="">
   </div>
   <div>
@@ -57,7 +78,13 @@ border-radius: 25px;
     <img src="img/image-03.jpg" alt="">
   </div>
   <div>
-    <img src="img/image-04.jpg" alt="">
+    <img src="img/image-04-1.jpg" alt="">
+  </div>
+  <div>
+    <video src="img/video-04.mp4" playsinline autoplay muted loop></video>
+  </div>
+  <div>
+    <img src="img/image-04-3.jpg" alt="">
   </div>
   <div>
     <img src="img/image-05-1.jpg" alt="">
@@ -84,13 +111,17 @@ border-radius: 25px;
     <img src="img/image-08-1.jpg" alt="">
   </div>
   <div>
-    <video src="img/video-08.mp4" playsinline autoplay muted loop></video>
+    <a href="https://player.vimeo.com/video/657488917" target="_blank">
+      <video src="img/video-08.mp4" playsinline autoplay muted loop></video>
+    </a>
   </div>
   <div>
     <img src="img/image-08-3.jpg" alt="">
   </div>
   <div>
+    <a href="https://player.vimeo.com/video/657489549" target="_blank">
     <video src="img/video-09-1.mp4" playsinline autoplay muted loop></video>
+    </a>
   </div>
   <div>
     <video src="img/video-09-2.mp4" playsinline autoplay muted loop></video>
@@ -116,11 +147,16 @@ border-radius: 25px;
   <div>
     <img src="img/image-12-1.jpg" alt="">
   </div>
-  <div>
-    <video src="img/video-12.mp4" playsinline autoplay muted loop></video>
+  <div class="col-6">
+    <a href="https://player.vimeo.com/video/657489055" target="_blank">
+    <video src="img/video-12-1.mp4" playsinline autoplay muted loop></video>
+    </a>
+    <a href="https://player.vimeo.com/video/657489296" target="_blank">
+    <video src="img/video-12-2.mp4" playsinline autoplay muted loop></video>
+    </a>
   </div>
   <div>
-    <img src="img/image-12-2.jpg" alt="">
+    <img src="img/image-12-3.jpg" alt="">
   </div>
   <div>
     <img src="img/image-13.jpg" alt="">
