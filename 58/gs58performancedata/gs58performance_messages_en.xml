@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+
+  <data name="en_project_title"><![CDATA[GS58 Performance]]></data>
+  <data name="en_project_author_name"><![CDATA[Studio Imergo]]></data>
+  <data name="en_project_author_url"><![CDATA[http://www.imergo.it]]></data>
+
+
+
+  <data name="en_pano65_title"><![CDATA[STD Dinette]]></data>
+  <data name="en_spotpoint147_tooltip"><![CDATA[STD Galley ]]></data>
+  <data name="en_spotpoint150_tooltip"><![CDATA[STD Owner cabin]]></data>
+  <data name="en_spotpoint162_tooltip"><![CDATA[STD Stb VIP cabin]]></data>
+  <data name="en_spotpoint175_tooltip"><![CDATA[Cockpit]]></data>
+  <data name="en_spotpoint516_tooltip"><![CDATA[STD day head]]></data>
+
+
+  <data name="en_pano66_title"><![CDATA[STD Galley ]]></data>
+  <data name="en_spotpoint148_tooltip"><![CDATA[STD Dinette]]></data>
+  <data name="en_spotpoint160_tooltip"><![CDATA[STD Port aft cabin]]></data>
+
+
+  <data name="en_pano55_title"><![CDATA[STD Dinette]]></data>
+
+
+  <data name="en_pano53_title"><![CDATA[OPT Owner cabin]]></data>
+  <data name="en_spotpoint152_tooltip"><![CDATA[OPT Head]]></data>
+  <data name="en_spotpoint419_tooltip"><![CDATA[STD Owner cabin // STANDARD MOOD]]></data>
+  <data name="en_spotpoint512_tooltip"><![CDATA[STD Dinette]]></data>
+
+
+  <data name="en_pano54_title"><![CDATA[OPT Head]]></data>
+  <data name="en_spotpoint153_tooltip"><![CDATA[OPT Owner cabin]]></data>
+
+
+  <data name="en_pano154_title"><![CDATA[STD day head]]></data>
+  <data name="en_spotpoint165_tooltip"><![CDATA[STD Stb VIP cabin]]></data>
+  <data name="en_spotpoint714_tooltip"><![CDATA[STD Dinette]]></data>
+
+
+  <data name="en_pano155_title"><![CDATA[STD Stb VIP cabin]]></data>
+  <data name="en_spotpoint163_tooltip"><![CDATA[STD Dinette]]></data>
+  <data name="en_spotpoint179_tooltip"><![CDATA[Engine room]]></data>
+
+
+  <data name="en_pano156_title"><![CDATA[STD Port aft cabin]]></data>
+  <data name="en_spotpoint161_tooltip"><![CDATA[STD Galley ]]></data>
+
+
+  <data name="en_pano167_title"><![CDATA[Stern]]></data>
+  <data name="en_spotpoint176_tooltip"><![CDATA[Tender garage]]></data>
+  <data name="en_spotpoint334_tooltip"><![CDATA[Cockpit]]></data>
+
+
+  <data name="en_pano168_title"><![CDATA[Tender garage]]></data>
+  <data name="en_spotpoint177_tooltip"><![CDATA[Stern]]></data>
+
+
+  <data name="en_pano169_title"><![CDATA[Engine room]]></data>
+  <data name="en_spotpoint180_tooltip"><![CDATA[STD Stb VIP cabin]]></data>
+  <data name="en_spotpoint513_tooltip"><![CDATA[STD Dinette]]></data>
+
+
+  <data name="en_pano181_title"><![CDATA[Cockpit]]></data>
+  <data name="en_spotpoint331_tooltip"><![CDATA[Stern]]></data>
+  <data name="en_spotpoint332_tooltip"><![CDATA[Bow]]></data>
+  <data name="en_spotpoint335_tooltip"><![CDATA[STD Dinette]]></data>
+
+
+  <data name="en_pano182_title"><![CDATA[Bow]]></data>
+  <data name="en_spotpoint333_tooltip"><![CDATA[Cockpit]]></data>
+
+
+  <data name="en_pano255_title"><![CDATA[STD Head]]></data>
+  <data name="en_spotpoint337_tooltip"><![CDATA[STD Owner cabin]]></data>
+
+
+  <data name="en_pano256_title"><![CDATA[STD Owner cabin]]></data>
+  <data name="en_spotpoint336_tooltip"><![CDATA[STD Head]]></data>
+  <data name="en_spotpoint338_tooltip"><![CDATA[STD Dinette]]></data>
+  <data name="en_spotpoint340_tooltip"><![CDATA[OPT Owner cabin // OPTIONAL MOOD]]></data>
+
+
+	<data name="en_spotmap707_tooltip"><![CDATA[STD Dinette]]></data>
+	<data name="en_spotmap708_tooltip"><![CDATA[OPT Owner cabin]]></data>
+	<data name="en_spotmap709_tooltip"><![CDATA[OPT Head]]></data>
+	<data name="en_spotmap710_tooltip"><![CDATA[Stern]]></data>
+	<data name="en_spotmap711_tooltip"><![CDATA[Tender garage]]></data>
+	<data name="en_spotmap712_tooltip"><![CDATA[Cockpit]]></data>
+	<data name="en_spotmap713_tooltip"><![CDATA[Bow]]></data>
+
+
+
+
+  <data name="en_CirclesControlBaropenFsTip"><![CDATA[]]></data>
+  <data name="en_CirclesControlBarcloseFsTip"><![CDATA[]]></data>
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[SELEZIONA IL TUO HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[SETTAGGI AVANZATI]]></data>
+  <data name="en_vr_setup_title"><![CDATA[SETTAGGI WEB VR]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Dispositivi::]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Dimensioni schermo:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Personalizza]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrazione giroscopo]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[SALVA]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[RIPRISTINA]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SEMPLICE]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[CHIUDI]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[SETTAGGI HMD]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distorzione:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distorzione 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Vignetta:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Aberrazione cromatica:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Sovrapposizione:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[RITORNA]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GIROSCOPO]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Posizionare il dispositivo su una superficie piana e 
+stabile e scegliere CALIBRATE 
+per correggere la deriva del giroscopio .]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRAZIONE]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[RIPRISTINA]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[RITORNA]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[sto calibrando...]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Calibrazione eseguita con successo]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Calibrazione fallita]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[Vr Modo[br] non è disponibile con tuo dispositivo]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>
