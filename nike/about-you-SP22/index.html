@@ -26,7 +26,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      background-color: white !important;
+      background-color: #f1f1f1 !important;
     }
 
     a {
@@ -64,11 +64,21 @@
       max-width: 600px;
       width: 100%;
       margin: 0 auto !important;
-      background-color: white;
+      background-color: #f1f1f1;
       display: flex;
       flex-direction: column;
       overflow: hidden;
       border-radius: 20px;
+    }
+
+    .border-radius-top {
+      overflow: hidden;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .border-radius-bottom {
+      overflow: hidden;
+      border-radius: 0 0 20px 20px;
     }
 
     @media only screen and (max-width:769px) {
@@ -80,25 +90,38 @@
       .container {
   border-radius: 10px;
       }
+
+      .border-radius-top {
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .border-radius-bottom {
+        overflow: hidden;
+        border-radius: 0 0 10px 10px;
+      }
     }
 
 
   </style>
   <div class="container">
-    <div>
+    <div class="border-radius-bottom">
       <video src="img/intro.mp4" playsinline autoplay muted loop></video>
     </div>
     <div>
-      <img src="img/highlights.jpg" alt="">
+      <img src="img/divider.jpg" alt="">
     </div>
-    <div>
+    <div class="border-radius-top">
     <video src="img/objectives.mp4" playsinline autoplay muted loop></video>
   </div>
+    <div>
+      <img src="img/highlights.jpg" alt="">
+    </div>
   <div>
-    <video src="img/lorem-ipsum.mp4" playsinline autoplay muted loop></video>
+    <video src="img/journey.mp4" playsinline autoplay muted loop></video>
   </div>
   <div>
-    <video src="img/key-stats.mp4" playsinline autoplay muted loop></video>
+    <video src="img/key-stats-graph.mp4" playsinline autoplay muted loop></video>
   </div>
   <div>
     <img src="img/timeline.jpg" alt="">
@@ -109,17 +132,26 @@
   <div>
     <video src="img/off-site.mp4" playsinline autoplay muted loop></video>
   </div>
-  <div>
+  <div class="border-radius-bottom">
     <video src="img/on-site.mp4" playsinline autoplay muted loop></video>
   </div>
   <div>
+    <img src="img/divider.jpg" alt="">
+  </div>
+  <div class="border-radius-top">
     <img src="img/social-activation-intro.jpg" alt="">
   </div>
   <div>
     <img src="img/social-activation-data.jpg" alt="">
   </div>
-  <div>
+  <div class="border-radius-bottom">
     <video src="img/social-activation.mp4" playsinline autoplay muted loop></video>
+  </div>
+  <div>
+    <img src="img/divider.jpg" alt="">
+  </div>
+  <div class="border-radius-top">
+    <img src="img/outro.jpg" alt="">
   </div>
   </div>
 </body>
