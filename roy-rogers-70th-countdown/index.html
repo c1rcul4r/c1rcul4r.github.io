@@ -4,14 +4,139 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 	<meta name="viewport" content=
 		"width=device-width, initial-scale=1.0">
 	<title>
 		Countdown
 	</title>
+	<style media="screen">
+
+	@media only screen and (max-width: 428px) {
+		body {
+			background-color: #00249C;
+		}
+	}
+
+	h1 {
+		font-family: 'Inter', sans-serif;
+		color: white;
+		font-weight: 700;
+		font-size: 48px;
+		margin: 0 !important;
+		margin-bottom: 8px !important;
+		line-height: 1;
+	}
+
+		p {
+			font-family: 'Inter', sans-serif;
+			color: white;
+			font-weight: 400;
+			font-size: 10px;
+			margin: 0 !important;
+			line-height: 1;
+		}
+
+		.countdown-container {
+			display: flex;
+			flex-direction: column;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			justify-content: center;
+			align-items: center;
+			max-width: 428px !important;
+			width: 100%;
+			max-height: 926px !important;
+			height: 100%;
+			background-color: #00249C;
+		}
+
+		.countdown-container .unit {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 24px;
+		}
+
+		.countdown-container .unit:last-child {
+			margin-bottom: 0;
+		}
+
+		.anniversary-logo {
+			position: absolute;
+			width: 100%;
+			height: auto;
+		}
+
+		.anniversary-logo img{
+			width: 100%;
+			height: auto;
+		}
+
+		.anniversary-logo.top {
+			top: 0;
+		}
+
+		.anniversary-logo.bottom {
+			bottom: 0;
+		}
+	</style>
 </head>
 
-<body style="background-color: #00249C">
+<body>
+	<div class="countdown-container">
+	<div class="anniversary-logo top">
+		<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/d9eb347dfd0c1f58a3c16c8b367b001e4b8c1cd5/roy-rogers-70th-countdown/anniversary-logo.svg" alt="">
+	</div>
+	<div class="unit"><h1 id="days"></h1><p>DAYS</p></div>
+	<div class="unit"><h1 id="hours"></h1><p>HOURS</p></div>
+	<div class="unit"><h1 id="minutes"></h1><p>MINUTES</p></div>
+	<div class="unit"><h1 id="seconds"></h1><p>SECONDS</p></div>
+	<div class="anniversary-logo bottom">
+		<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/d9eb347dfd0c1f58a3c16c8b367b001e4b8c1cd5/roy-rogers-70th-countdown/anniversary-logo.svg" alt="">
+	</div>
+	</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("days").innerHTML = days
+
+	document.getElementById("hours").innerHTML = hours
+
+	document.getElementById("minutes").innerHTML = minutes
+
+	document.getElementById("seconds").innerHTML = seconds
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </body>
 
 </html>
