@@ -12,6 +12,8 @@
 	<title>
 		Countdown
 	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 	<style media="screen">
 
 	@media only screen and (max-width: 428px) {
@@ -54,6 +56,33 @@
 			height: 100%;
 			background-color: #00249C;
 		}
+}
+
+.countdown-container {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	justify-content: center;
+	align-items: center;
+	max-width: 428px !important;
+	width: 100%;
+	max-height: 926px !important;
+	height: 100%;
+	background-color: #00249C;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+	 }
 
 		.countdown-container .unit {
 			display: flex;
@@ -85,10 +114,46 @@
 		.anniversary-logo.bottom {
 			bottom: 0;
 		}
+
+		.logo-splash {
+			width: 100%;
+    	height: 100%;
+    	margin: 0 auto !important;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+			background-color: #00249C;
+			z-index: 1;
+			animation: fadeInAnimation ease 2s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+		}
+
+		.logo-splash img {
+			width: auto;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+@keyframes fadeInAnimation {
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 	</style>
 </head>
 
 <body>
+	<div class="logo-splash">
+		<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/022e2801f3c77bfbd6bf7cb0893565b74eacba98/roy-rogers-70th-countdown/70-anniversary-logo.svg" alt="">
+	</div>
 	<div class="countdown-container">
 	<div class="anniversary-logo top">
 		<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/d9eb347dfd0c1f58a3c16c8b367b001e4b8c1cd5/roy-rogers-70th-countdown/anniversary-logo.svg" alt="">
