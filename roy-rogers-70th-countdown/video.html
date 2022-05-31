@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Countdown
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<style media="screen">
+
+	@media only screen and (max-width: 428px) {
+		body {
+			background-color: #00249C;
+			margin: 0 !important;
+		}
+	}
+
+	h1 {
+		font-family: 'Inter', sans-serif;
+		color: white;
+		font-weight: 700;
+		font-size: 48px;
+		margin: 0 !important;
+		margin-bottom: 8px !important;
+		line-height: 1;
+	}
+
+		p {
+			font-family: 'Inter', sans-serif;
+			color: white;
+			font-weight: 400;
+			font-size: 10px;
+			margin: 0 !important;
+			line-height: 1;
+		}
+
+		.countdown-container {
+			display: flex;
+			flex-direction: column;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			justify-content: center;
+			align-items: center;
+			max-width: 428px !important;
+			width: 100%;
+			max-height: 926px !important;
+			height: 100%;
+			background-color: #00249C;
+		}
+}
+
+.countdown-container {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	justify-content: center;
+	align-items: center;
+	max-width: 428px !important;
+	width: 100%;
+	max-height: 926px !important;
+	height: 100%;
+	background-color: #00249C;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+	 }
+
+		.countdown-container .unit {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 24px;
+		}
+
+		.countdown-container .unit:last-child {
+			margin-bottom: 0;
+		}
+
+		.anniversary-logo {
+			position: absolute;
+			width: 100%;
+			height: auto;
+		}
+
+		.anniversary-logo img{
+			width: 100%;
+			height: auto;
+		}
+
+		.anniversary-logo.top {
+			top: 0;
+		}
+
+		.anniversary-logo.bottom {
+			bottom: 0;
+		}
+
+		.logo-splash {
+			max-width: 428px !important;
+			width: 100%;
+			max-height: 926px !important;
+			height: 100%;
+    	margin: 0 auto !important;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #00249C;
+			z-index: 1;
+			animation: fadeInAnimation ease 2s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+		}
+
+		.logo-splash img {
+			width: auto;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+@keyframes fadeInAnimation {
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+	</style>
+</head>
+
+<body>
+	<div class="logo-splash" style="pointer-events: none;">
+		<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/022e2801f3c77bfbd6bf7cb0893565b74eacba98/roy-rogers-70th-countdown/70-anniversary-logo.svg" alt="">
+	</div>
+	<div class="countdown-container">
+		<div class="anniversary-logo top">
+			<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/d9eb347dfd0c1f58a3c16c8b367b001e4b8c1cd5/roy-rogers-70th-countdown/anniversary-logo.svg" alt="">
+		</div>
+		<iframe src="https://player.vimeo.com/video/715532664?h=246b21595a" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);width: 90%; height: 90%;"></iframe>
+		<div class="anniversary-logo bottom">
+			<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/d9eb347dfd0c1f58a3c16c8b367b001e4b8c1cd5/roy-rogers-70th-countdown/anniversary-logo.svg" alt="">
+		</div>
+	</div>
+</body>
+
+</html>
