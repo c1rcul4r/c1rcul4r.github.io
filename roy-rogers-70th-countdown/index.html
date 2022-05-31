@@ -151,14 +151,18 @@
 	}
 }
 
+#video {
+	display: none;
+}
+
 	</style>
 </head>
 
 <body>
-	<div class="logo-splash">
+	<div class="logo-splash" style="pointer-events: none;">
 		<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/022e2801f3c77bfbd6bf7cb0893565b74eacba98/roy-rogers-70th-countdown/70-anniversary-logo.svg" alt="">
 	</div>
-	<div class="countdown-container">
+	<div class="countdown-container" id="countdown">
 	<div class="anniversary-logo top">
 		<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/d9eb347dfd0c1f58a3c16c8b367b001e4b8c1cd5/roy-rogers-70th-countdown/anniversary-logo.svg" alt="">
 	</div>
@@ -170,7 +174,15 @@
 		<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/d9eb347dfd0c1f58a3c16c8b367b001e4b8c1cd5/roy-rogers-70th-countdown/anniversary-logo.svg" alt="">
 	</div>
 	</div>
-
+	<div class="countdown-container" id="video">
+		<div class="anniversary-logo top">
+			<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/d9eb347dfd0c1f58a3c16c8b367b001e4b8c1cd5/roy-rogers-70th-countdown/anniversary-logo.svg" alt="">
+		</div>
+		<iframe src="https://player.vimeo.com/video/715532664?h=246b21595a" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);width: 90%; height: 90%;"></iframe>
+		<div class="anniversary-logo bottom">
+			<img src="https://raw.githubusercontent.com/c1rcul4r/c1rcul4r.github.io/d9eb347dfd0c1f58a3c16c8b367b001e4b8c1cd5/roy-rogers-70th-countdown/anniversary-logo.svg" alt="">
+		</div>
+	</div>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Jun 15, 2022 00:00:00").getTime();
@@ -202,7 +214,8 @@ var x = setInterval(function() {
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("countdown").style.display = 'none';
+		document.getElementById("video").style.display = 'flex';
   }
 }, 1000);
 </script>
