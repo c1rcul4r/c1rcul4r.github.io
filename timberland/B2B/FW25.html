@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FW25</title>
+  </head>
+  <body>
+    <style>
+     @font-face{
+    font-family:'NT Bau Mono Regular';
+    src:url(webfont.eot?#iefix) format('embedded-opentype'),url(https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/font/NT-BauMonoRegular.woff2) format('woff2'),url(https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/font/NT-BauMonoRegular.woff) format('woff'),url(https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/font/NT-BauMonoRegular.ttf) format('truetype')
+}
+ @font-face{
+    font-family:'GT Flexa Standard Black';
+    src:url(webfont.eot?#iefix) format('embedded-opentype'),url(https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/font/GT-Flexa-Standard-Black.woff2) format('woff2'),url(https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/font/GT-Flexa-Standard-Black.woff) format('woff'),url(https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/font/GT-Flexa-Standard-Black.ttf) format('truetype')
+}
+body{
+    margin:0;
+    padding:0;
+    background:#fff;
+    font-family:Arial,sans-serif;
+    font-weight:400;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+.desktop{
+    display:none
+}
+.mobile{
+    display:block
+}
+@media only screen and (min-width:768px){
+    .desktop{
+        display:block
+    }
+    .mobile{
+        display:none
+    }
+}
+
+.video-wrapper{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:126.4vw;
+}
+.video-wrapper iframe.desktop,.video-wrapper iframe.mobile, .video-wrapper .desktop, .video-wrapper .mobile {
+    width:100vw!important;
+    height:126.4vw!important;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:all!important;
+    cursor:pointer!important
+}
+.video-wrapper iframe.desktop, .video-wrapper .desktop{
+    width: 100% !important;
+    height:36vw!important
+}    
+        
+h2{
+    font-family:'GT Flexa Standard Black'!important;
+    letter-spacing:0;
+    font-size:5.6vw;
+    line-height:5.6vw;
+    margin-bottom:10px
+}
+h1{
+    font-family:'GT Flexa Standard Black'!important;
+    letter-spacing:0;
+    font-size:12vw;
+    line-height:12vw;
+    margin-bottom:32px;
+    text-align: center;
+}
+p{
+    margin: 0 0 32px 0 !important;
+     color: #000;
+     font-family: "NT Bau";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+}
+@media only screen and (min-width:768px){
+    h2{
+        font-size:2.5vw;
+        line-height:2.5vw;
+        color:#fff
+    }
+     h1{
+        font-size:4vw;
+        line-height:4vw;
+        color:#fff;
+        text-align: left;
+    }
+    p{
+     color: #fff;
+}
+}
+.image-wrapper{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden
+}
+.image-wrapper img{
+    width:100%;
+    height:auto;
+}
+@media only screen and (min-width:768px){
+    .image-wrapper{
+        position:relative;
+        width:100%;
+        height:100%;
+        overflow:hidden
+    }
+    .image-wrapper img{
+        width:100%;
+        height:auto;
+    }
+.video-wrapper{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%
+}
+.video-wrapper iframe.desktop,.video-wrapper iframe.mobile{
+    width:100vw!important;
+    height:126.4vw!important;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:all!important;
+    cursor:pointer!important
+}
+.video-wrapper iframe.desktop{
+    width: 100% !important;
+    height:37.4vw!important
+}
+    }
+.container-full,.container-half{
+    width:100%;
+    margin:0!important;
+    padding:0!important;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position:relative
+}
+.container-full{
+    height:100%;
+}
+.container-half{
+    height:auto;
+    gap: 48px;
+    width: auto;
+    padding: 0 16px !important;
+}
+@media only screen and (min-width:768px){
+    .wrapper{
+        display:flex;
+        justify-content:center;
+        gap: 20px;
+        padding: 48px 138px;
+    }
+    .container-full{
+        width:100vw;
+        height:auto
+    }
+    .container-full,.container-full .wrapper{
+        margin:0 auto!important
+    }
+    .container-full:after,.container-half:after{
+        content:"";
+        display:block;
+        padding-bottom:36%
+    }
+    .container-half{
+        max-width:540px!important;
+        width:33.33%;
+        height:auto;
+        position: relative;
+    }
+    .container-half:after{
+        padding-bottom:48px;
+    }
+}
+@media only screen and (min-width:1441px){
+    .container-half{
+        max-width:720px!important;
+        width:50%;
+        height:auto
+    }
+}
+.content-wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:calc(5vw + 30px);
+    margin-top:0;
+}
+.content-wrapper.hero-video{
+    left: 0;
+     padding: 0 20px;
+     align-items: center !important;
+     z-index: 100;
+}
+.content-text-wrapper{
+    z-index:10000
+}
+@media only screen and (min-width:768px){
+    .content-wrapper{
+        margin-top:0;
+        margin-bottom:0;
+        position:absolute
+    }
+    
+    .content-wrapper.relative{
+        position:relative;
+    }
+    
+    .content-wrapper.hero-video{
+    left: 0;
+     padding: 0 20px;
+     align-items: flex-start !important;
+     z-index: 100;
+}
+}
+.cta{
+    min-width:140px;
+    background-color:#000;
+    border:2px solid #000;
+    color:#fff;
+    padding:15px 25px;
+    margin:0 0 10px;
+    position:relative;
+    overflow:hidden;
+    text-decoration:none!important;
+    display:inline-block;
+    text-align:center;
+    font-family:'NT Bau Mono Regular'!important;
+    letter-spacing:0;
+    font-size:18px;
+    line-height:18px;
+    font-weight:400;
+}
+.cta.white{
+    background-color:#000;
+    border:2px solid #000;
+    color:#fff;
+}
+.cta:before{
+    transition:all 250ms ease-in-out;
+    content:'';
+    position:absolute;
+    width:15px;
+    height:15px;
+    background-image:url(https://images.timberland.com/is/content/TimberlandBrand/arrow-butt-);
+    right:-15px;
+    opacity:0;
+    top:50%;
+    transform:translateY(-50%);
+    background-position:center center;
+    background-repeat:no-repeat
+}
+.cta:hover:before{
+    right:8px;
+    opacity:1
+}
+.cta-wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+@media only screen and (min-width:768px){
+    .cta{
+        min-width:125px;
+        padding:20px 30px;
+        margin:0 5px 10px;
+        font-size:18px;
+        line-height:18px
+    }
+    .cta-wrapper{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center
+    }
+    
+    .cta.white{
+    background-color:#fff;
+    border:2px solid #fff;
+    color:#000;
+}
+}
+    </style>
+    <div class="container-full">
+      <!-- Background Image -->
+      <!-- <div class="">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div> -->
+      <!-- Background Video -->
+      <div class="video-wrapper">
+        <img class="desktop" src="https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/FW25/container-image_desktop.jpg" alt="">
+        <img class="mobile" src="https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/FW25/container-image_mobile.jpg" alt="">
+      </div>
+        <div class="content-wrapper hero-video">
+        <div class="content-text-wrapper">
+          <!-- Title -->
+          <h1>FW25</h1>
+          <!-- Paragraph -->
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+      <!-- CTA -->
+      <div class="cta-wrapper">
+        <a class="cta white" href="#4510B0:45-S0AO24/catalog/nav/fa365261-99d5-4dc1-9bd3-85829f2df320">SHOP NOW</a>
+      </div>
+      </div>
+    </div>
+    <div class="wrapper">
+    <div class="container-half left">
+      <!-- Background Image -->
+      <div class="image-wrapper">
+        <img class="desktop" src="https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/FW25/container-01_mobile%2Bdesktop.jpg" alt="">
+        <img class="mobile" src="https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/FW25/container-01_mobile%2Bdesktop.jpg" alt="">
+      </div>
+      <!-- Content -->
+      <div class="content-wrapper relative">
+      <!-- CTA -->
+      <div class="cta-wrapper">
+        <a class="cta" href="#4510B0:45-S0AO24/catalog/nav/fa365261-99d5-4dc1-9bd3-85829f2df320">SHOP MEN</a>
+      </div>
+      </div>
+    </div>
+    <div class="container-half left">
+      <!-- Background Image -->
+      <div class="image-wrapper">
+        <img class="desktop" src="https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/FW25/container-02_mobile%2Bdesktop.jpg" alt="">
+        <img class="mobile" src="https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/FW25/container-02_mobile%2Bdesktop.jpg" alt="">
+      </div>
+      <!-- Content -->
+      <div class="content-wrapper relative">
+      <!-- CTA -->
+      <div class="cta-wrapper">
+        <a class="cta" href="#4510B0:45-S0AO24/catalog/nav/fa365261-99d5-4dc1-9bd3-85829f2df320">SHOP WOMEN</a>
+      </div>
+      </div>
+    </div>
+    <div class="container-half right">
+      <!-- Background Image -->
+      <div class="image-wrapper">
+        <img class="desktop" src="https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/FW25/container-03_mobile%2Bdesktop.jpg" alt="">
+        <img class="mobile" src="https://raw.githubusercontent.com/c1rcul4r/timberland/main/B2B-platform/FW25/container-03_mobile%2Bdesktop.jpg" alt="">
+      </div>
+      <!-- Content -->
+      <div class="content-wrapper relative">
+      <!-- CTA -->
+      <div class="cta-wrapper">
+        <a class="cta" href="#4510B0:45-S0AO24/catalog/nav/fa365261-99d5-4dc1-9bd3-85829f2df320">SHOP KIDS</a>
+      </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
